@@ -89,8 +89,6 @@ def p_range():
             print("Port",i, "is  closed.")
             closed_number +=1 
 
-    print("The open ports are {opened_number} and closed ports are {closed_number}")
-
 
 def all():
     opened_number = 0
@@ -110,16 +108,15 @@ def all():
 
         if scan() == True:
             print("Port", i, "is open.")
-            opened += 1
+            opened_number += 1
         else:
             print("Port",i, "is  closed.")
-            closed +=1 
-
-    print("The open ports are {opened_number} and closed ports are {closed_number}")
-
+            closed_number +=1 
+    print("There are ", opened_number, " ports opened and ", closed_number, " ports closed.")
+    
 def main():
     
-    print("Enter '1' to scan the static url and port.")
+    print("\nEnter '1' to scan the static url and port.")
     print("Enter '2' to scan url and port from user input.")
     print("Enter '3' to scan specific ports of an ip.")
     print("Enter '4' to scan ports in soecific range of an ip.")
