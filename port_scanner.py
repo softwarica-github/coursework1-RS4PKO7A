@@ -119,7 +119,7 @@ def main():
     print("\nEnter '1' to scan the static url and port.")
     print("Enter '2' to scan url and port from user input.")
     print("Enter '3' to scan specific ports of an ip.")
-    print("Enter '4' to scan ports in soecific range of an ip.")
+    print("Enter '4' to scan ports in specific range of an ip.")
     print("Enter '5' to scan all the ports of the ip.")
     print("Enter '6' to quit the program.")
     choice = input("Please enter your choice: ")
